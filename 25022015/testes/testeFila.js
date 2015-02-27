@@ -1,41 +1,4 @@
-var Node = require('./node.js');
-
-/*
-*   Implementação de Fila
-*/
-function Fila(){
-    this.first = null;
-    this.count = 0;
-
-    this.obterCount = function(){
-        return this.count;
-    }
-
-    this.push = function(data){
-        var node = new Node(data);
-
-        if (!this.first){
-            this.first = node;
-        } else {
-            n = this.first;
-            while (n.next) {
-                n = n.next;
-            }
-            n.next = node;
-        }
-
-        this.count += 1;
-        return node;
-    }
-    
-    this.pop = function(){
-        temp = this.first;
-        this.first = this.first.next;
-        this.size -= 1;
-        return temp.data;
-    }
-}
-
+var Fila = require('../entidades/fila');
 //
 // Teste da Implementação de Pilha
 //
