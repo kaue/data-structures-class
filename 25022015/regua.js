@@ -8,6 +8,8 @@ var chBig = '-- ',
 */
 (function r(n,l) {
     console.log(n%10==0?chBig+n/10:chSmall);
-    if(n/10<intEnd)
-        return r(n+1, intEnd);
+    if(n/10<l)
+        return r(n+1, l);
 })(intStart,intEnd);
+
+

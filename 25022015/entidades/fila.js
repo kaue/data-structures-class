@@ -11,13 +11,13 @@ module.exports = function(){
         return this.count;
     }
 
-    this.push = function(data){
+    this.insert = function(data){
         var node = new Node(data);
 
         if (!this.first){
             this.first = node;
         } else {
-            n = this.first;
+            var n = this.first;
             while (n.next) {
                 n = n.next;
             }
@@ -28,10 +28,11 @@ module.exports = function(){
         return node;
     }
     
-    this.pop = function(){
-        temp = this.first;
+    this.remove = function(){
+        var temp = this.first;
         this.first = this.first.next;
-        this.size -= 1;
+        this.count -= 1;
         return temp.data;
     }
 }
+

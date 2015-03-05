@@ -21,7 +21,7 @@ module.exports = function(){
         node.next = this.top;
         this.top = node;
 
-        this.count++;
+        this.count += 1;
     }
     
     this.pop = function(){

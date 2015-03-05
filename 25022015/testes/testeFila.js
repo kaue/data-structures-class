@@ -9,13 +9,13 @@ function obterNumeroAleatorio(min,max)
 var fila = new Fila();
 var numeroAleatorio = obterNumeroAleatorio(0,100);
 console.log('Inserir elemento (%s) na Fila...', numeroAleatorio);
-fila.push(numeroAleatorio);
+fila.insert(numeroAleatorio);
 var numeroAleatorio = obterNumeroAleatorio(0,100);
 console.log('Inserir elemento (%s) na Fila...', numeroAleatorio);
-fila.push(numeroAleatorio);
+fila.insert(numeroAleatorio);
 console.log('Utilizar o metodo .obterCount() da Fila...');
 console.log('Resultado = %s', fila.obterCount());
-console.log('Utilizar metodo .pop() da Fila...');
-console.log('Resultado = Item %s removido da Pilha', fila.pop());
+console.log('Utilizar metodo .remove() da Fila...');
+console.log('Resultado = Item %s removido da Pilha', fila.remove());
 console.log('Utilizar o metodo .obterCount() da Fila...');
 console.log('Resultado = %s', fila.obterCount());
