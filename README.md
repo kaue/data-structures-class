@@ -1,4 +1,4 @@
-# data-structures-class
+# :floppy_disk: data-structures-class
 Data Structures Class at PUCSP
 
 # 25.02.2015
